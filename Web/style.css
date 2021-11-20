@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(247, 247, 247);
+    }
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+p {
+  
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header {
+    width: 100%;
+    display: center;
+	padding-bottom: 25px;
+	flex-direction: column;
+    }
+img {
+    height: 640px;
+    width: 1080px;
+}
