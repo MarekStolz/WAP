@@ -1,13 +1,33 @@
 body {
-    background-color: rgb(0, 140, 255);
+    background: linear-gradient(-45deg, #1861c0, #a1bddd, #1b8fb9, #2b92d6);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
     }
 h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
+}
+h2 {
+    color:rgb(255, 255, 255);
 }
 p {
   
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 .flex {
@@ -24,10 +44,13 @@ header {
 img {
     height: 640px;
     width: 1080px;
+    border-style: inset;
+    border-color: white;
 }
 button {
     color: rgb(0, 0, 0);
 }
 address {
+    color:rgb(255, 255, 255);
     text-align: center;
 }
