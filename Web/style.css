@@ -17,7 +17,6 @@ body {
 	}
 }
 
-    
 h1 {
     color: rgb(255, 255, 255);
     text-align: center;
@@ -29,6 +28,8 @@ p {
   
   color: rgb(255, 255, 255);
   text-align: center;
+  font-size: large;
+  margin-bottom: 25px;
 }
 .flex {
 	display: flex;
@@ -42,6 +43,9 @@ header {
 	flex-direction: column;
     }
 img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 640px;
     width: 1080px;
     border-style: inset;
@@ -50,7 +54,10 @@ img {
 button {
     color: rgb(0, 0, 0);
 }
-address {
-    color:rgb(255, 255, 255);
-    text-align: center;
+.mapa {
+	
+	height: 500px;
+    width: 500px;
+    border-style: inset;
+    border-color: white;
 }
