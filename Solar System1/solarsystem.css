@@ -96,7 +96,8 @@ body {
     width: 10px;
     border-radius: 50%;
     background-color: white;
-    
+    position: absolute;
+  
 }*/
 @keyframes circle {
   0% {
