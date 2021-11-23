@@ -1,30 +1,25 @@
 body {
   background-color: rgb(0, 0, 0);
+  display: table;
+  margin: auto;
 }
 .slunce {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 100;
   background-color: yellow;
-  position: fixed;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
+  margin-top: 11cm;
 }
 .kruh1 {
   width: 330px;
   height: 330px;
   border: 1px solid #ccc;
-  position: absolute;
   border-radius: 50%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
+  margin-top: -5.5cm;
 }
 
 .merkur {
@@ -32,12 +27,9 @@ body {
   height: 20px;
   background: red;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
+  margin-top: 4cm;
   animation: circle 3s linear infinite;
 }
 
@@ -45,37 +37,28 @@ body {
   width: 430px;
   height: 430px;
   border: 1px solid #ccc;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
   border-radius: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: -10cm;
 }
 .venuse {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: orange;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
+  margin-top: 8.5cm;
   animation: circle 7.4s linear infinite;
 }
 .kruh3 {
   width: 540px;
   height: 540px;
   border: 1px solid #ccc;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   margin: auto;
+  margin-top: -13cm;
   border-radius: 50%;
 }
 .zeme {
@@ -83,12 +66,10 @@ body {
   width: 20px;
   border-radius: 50%;
   background-color: blue;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  position: relative;
+  margin: 50%;
+  margin-left: 6cm;
+  margin-top: 8cm;
   animation: circle 12s linear infinite;
 }
 /*.mesic{
