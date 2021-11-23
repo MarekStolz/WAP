@@ -1,12 +1,11 @@
 body {
   background-color: rgb(0, 0, 0);
-  display: table;
   margin: auto;
 }
 .slunce {
   width: 100px;
   height: 100px;
-  border-radius: 100;
+  border-radius: 50%;
   background-color: yellow;
   position: relative;
   margin: auto;
@@ -30,9 +29,8 @@ body {
   position: relative;
   margin: auto;
   margin-top: 4cm;
-  animation: circle 3s linear infinite;
+  animation: venuse 3s linear infinite;
 }
-
 .kruh2 {
   width: 430px;
   height: 430px;
@@ -49,8 +47,8 @@ body {
   background-color: orange;
   position: relative;
   margin: auto;
-  margin-top: 8.5cm;
-  animation: circle 7.4s linear infinite;
+  margin-top: 7, 2cm;
+  animation: venuse 7.4s linear infinite;
 }
 .kruh3 {
   width: 540px;
@@ -67,10 +65,11 @@ body {
   border-radius: 50%;
   background-color: blue;
   position: relative;
-  margin: 50%;
-  margin-left: 6cm;
-  margin-top: 8cm;
-  animation: circle 12s linear infinite;
+  margin-right: 5cm;
+  margin-left: 5cm;
+  margin-bottom: 15cm;
+  margin-top: 10cm;
+  animation: zeme 12s linear infinite;
 }
 /*.mesic{
     height: 10px;
@@ -80,7 +79,23 @@ body {
     position: absolute;
   
 }*/
-@keyframes circle {
+@keyframes merkur {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes venuse {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(-165px) rotate(360deg);
+  }
+}
+@keyframes zeme {
   0% {
     transform: rotate(0deg) translate(-165px) rotate(0deg);
   }
