@@ -1,31 +1,32 @@
 body {
-  
   background-color: rgb(0, 0, 0);
 }
 .slunce {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: yellow;
+  height: 150px;
+  width: 150px;
   position: relative;
   margin: auto;
-  margin-top: 11cm;
+  margin-top: 10cm;
+  background-color: rgba(255, 255, 0, 100%);
+  border-color: transparent;
+  border-radius: 50%;
+  box-shadow: 5px 5px 200px 50px rgba(255, 255, 0, 50%);
+  animation: spin 5s infinite linear;
 }
 .kruhM {
   width: 330px;
   height: 330px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   position: relative;
   margin: auto;
-  margin-top: -5.5cm;
+  margin-top: -6.5cm;
   animation: spin 6s linear 0s infinite;
-
 }
 .kruhV {
   width: 430px;
   height: 430px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   position: relative;
   margin: auto;
@@ -35,7 +36,7 @@ body {
 .kruhZ {
   width: 540px;
   height: 540px;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   position: relative;
   margin: auto;
@@ -45,7 +46,7 @@ body {
 .kruhN {
   width: 80px;
   height: 80px;
-  border: 1px solid #ccc;
+  border: 1px solid none;
   border-radius: 50%;
   position: relative;
   margin: auto;
@@ -53,7 +54,7 @@ body {
   margin-left: -0.5cm;
   margin-right: -0.5cm;
   margin-bottom: -0.5cm;
-  animation: spin 12s linear 0s infinite;
+  animation: spin 3s linear 0s infinite;
 }
 .merkur {
   width: 20px;
@@ -62,15 +63,17 @@ body {
   border-radius: 50%;
   position: absolute;
   margin-top: 5.5cm;
+  box-shadow: inset -10px 0px 10px rgb(44, 9, 9);
 }
 .venuse {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   background-color: orange;
   position: absolute;
   margin-top: 7.5cm;
-  }
+  box-shadow: inset -10px 0px 10px rgb(88, 34, 13);
+}
 .zeme {
   height: 50px;
   width: 50px;
@@ -78,10 +81,11 @@ body {
   background-color: blue;
   position: absolute;
   margin-top: 9cm;
+  box-shadow: inset -10px 0px 10px rgb(11, 12, 54);
 }
-.mesic{
-  height: 10px;
-  width: 10px;
+.mesic {
+  height: 12px;
+  width: 12px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
@@ -94,8 +98,4 @@ body {
   to {
     transform: rotate(-359deg);
   }
-  }
-
-
-
-
+}
