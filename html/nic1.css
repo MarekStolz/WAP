@@ -1,8 +1,9 @@
 body {
   background-color: rgb(169, 169, 197);
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
+  
 }
 label {
   float:left;
@@ -12,8 +13,8 @@ label {
 
 fieldset {
   padding: 1em;
-  border: 1px solid;
-  width: 50em;
+  border: 2px solid;
+  width: 10cm;
   }
 legend {
   padding: 2px 4px;
@@ -24,10 +25,20 @@ table {
     color: black;
     padding: 1em;
     border: 1px solid;
-    width: 50em;
+    width: 10cm;
 }
 table, th, td {
-  border: 1px solid black;
+  border: 2px solid black;
   border-collapse: collapse;
+}
+
+.dva {
+    margin-top:5%;
+    margin-left:0%;
+}
+
+.jedna{
+    margin-top:1%;
+    margin-left:35%;
 }
 
