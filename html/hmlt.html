@@ -5,24 +5,16 @@
 <link rel="stylesheet" href="nic1.css">
 </head>
 <body>
-<form method="post" action="">
+<form id="form">
  <fieldset>
    <legend>Formulář</legend>
    <div>
-     <label>Jméno</label>
-     <input id="Name" type="text" size="50" value="" />
-   </div>
-   <div>
-     <label>Přijmení</label>
-     <input id="Last" type="text" size="50" value="" />
-   </div>
-   <div>
      <label>Věk</label>
-     <input id="age" type="text" size="50" value="" />
+     <input name="age" id="age" type="text" size="50" value="" />
    </div>
    <div>
     <label>Počet knih</label>
-    <input id="book" type="text" size="50" value="" />
+    <input name="book" id="book" type="text" size="50" value="" />
   </div>
   <div>
     <label>&nbsp;</label>
@@ -30,5 +22,18 @@
   </div>
  </fieldset>
 </form>
+    <table class="forma" id="table">
+     <thead>
+         <tr>
+          <th>Počet knih</th>
+          <th>Věk</th>
+         </tr> 
+     </thead>
+        <tbody>
+          <th>5</th>
+          <th>6</th>
+        </tbody>
+    </table>
+<script src="js.js"></script>
 </body>
 </html>
