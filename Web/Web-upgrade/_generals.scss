@@ -1,0 +1,49 @@
+
+body {
+    background: $bg-color;
+	background-size: 400% 400%;
+	height: 100vh;
+}
+h1 {
+    color: $text-color
+}
+h2 {
+    color: $text-color;
+}
+p {
+  
+  color: $text-color;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 25px;
+}
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header {
+    width: 100%;
+    display: center;
+	padding-bottom: 25px;
+	flex-direction: column;
+    }
+img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 640px;
+    width: 1080px;
+    border-style: inset;
+    border-color: white;
+}
+button {
+    color: rgb(0, 0, 0);
+}
+.mapa {
+	
+	height: 500px;
+    width: 500px;
+    border-style: inset;
+    border-color: $text-color;
+}

@@ -1,0 +1,64 @@
+body {
+  background: white;
+  background-size: 400% 400%;
+  height: 100vh;
+}
+
+h1 {
+  color: black;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  color: black;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  width: 100%;
+  display: center;
+  padding-bottom: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 640px;
+  width: 1080px;
+  border-style: inset;
+  border-color: white;
+}
+
+button {
+  color: black;
+}
+
+.mapa {
+  height: 500px;
+  width: 500px;
+  border-style: inset;
+  border-color: black;
+}
+/*# sourceMappingURL=dark.css.map */
