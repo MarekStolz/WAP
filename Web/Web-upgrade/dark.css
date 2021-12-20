@@ -51,14 +51,21 @@ img {
   border-color: white;
 }
 
-button {
-  color: black;
-}
-
 .mapa {
   height: 500px;
   width: 500px;
   border-style: inset;
   border-color: black;
+}
+
+button {
+  padding: 1em;
+  border-radius: 0.25em;
+  color: white;
+  background: black;
+}
+
+button:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=dark.css.map */

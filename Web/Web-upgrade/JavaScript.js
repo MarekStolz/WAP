@@ -18,10 +18,21 @@ function generateRandomPicture(array){
 	image.setAttribute("src", array[randomNum]);
 }
 
-console.log("Hello");
+let mode = "light";
+document.getElementById("mode").onclick = () => {
 
-function switchCSS() {
-  let emlement = document.body;
-  element.classlist.toggle();
-
+/*if(mode == "light"){
+  mode = "dark";
 }
+else {
+  mode = "dark"
+}*/
+
+mode = mode == "light" ? "dark" : "light";
+
+e.target.inner.Text = mode == "light" ? "na tmavý režim" : "na světlý režim";
+
+document.getElementById("link-style").href = "css/" + mode + ".min.css";
+
+console.log("nastaveno na " + mode);
+};

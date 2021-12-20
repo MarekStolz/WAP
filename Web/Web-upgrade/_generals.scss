@@ -37,13 +37,20 @@ img {
     border-style: inset;
     border-color: white;
 }
-button {
-    color: rgb(0, 0, 0);
-}
+
 .mapa {
 	
 	height: 500px;
     width: 500px;
     border-style: inset;
     border-color: $text-color;
+}
+button {
+padding: 1em;
+border-radius: 0.25em;
+color: $bg-color;
+background: $text-color;
+&:hover {
+    cursor: pointer;
+}
 }
