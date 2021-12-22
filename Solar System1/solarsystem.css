@@ -63,7 +63,7 @@ body {
   border-radius: 50%;
   position: absolute;
   margin-top: 5.5cm;
-  box-shadow: inset -10px 0px 10px rgb(44, 9, 9);
+  box-shadow: inset 15px 0px 10px rgb(44, 9, 9);
 }
 .venuse {
   height: 35px;
@@ -72,7 +72,7 @@ body {
   background-color: orange;
   position: absolute;
   margin-top: 7.5cm;
-  box-shadow: inset -10px 0px 10px rgb(88, 34, 13);
+  box-shadow: inset 15px 0px 15px rgb(88, 34, 13);
 }
 .zeme {
   height: 50px;
@@ -81,7 +81,7 @@ body {
   background-color: blue;
   position: absolute;
   margin-top: 9cm;
-  box-shadow: inset -10px 0px 10px rgb(11, 12, 54);
+  box-shadow: inset 15px 0px 25px rgb(11, 12, 54);
 }
 .mesic {
   height: 12px;
