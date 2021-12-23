@@ -1,0 +1,54 @@
+body {
+  margin: auto;
+  background: black;
+  padding: 10px;
+}
+
+h1 {
+  color: #fcfcfc;
+  text-align: center;
+}
+
+h2 {
+  color: #fcfcfc;
+  text-align: center;
+}
+
+p {
+  color: #fcfcfc;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+header {
+  width: 100%;
+  display: center;
+  padding-bottom: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  padding: 1em;
+  border-radius: 0.25em;
+  color: black;
+  background: #fcfcfc;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+table {
+  padding-left: 75em;
+}
+
+th,
+td {
+  color: #fcfcfc;
+  border: 1px solid #fcfcfc;
+}
+/*# sourceMappingURL=dark.css.map */

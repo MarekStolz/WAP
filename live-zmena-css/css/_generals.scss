@@ -1,0 +1,49 @@
+body {
+  margin: auto;
+  background: $bg-color;
+  padding: 10px;
+    }
+
+h1 {
+    color: $text-color;
+    text-align: center;
+}
+h2 {
+    color: $text-color;
+    text-align: center;
+}
+p {
+  
+  color: $text-color;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+header {
+    width: 100%;
+    display: center;
+	padding-bottom: 25px;
+	flex-direction: column;
+    }
+
+button {
+padding: 1em;
+border-radius: 0.25em;
+color: $bg-color;
+background: $text-color;
+&:hover {
+    cursor: pointer;
+}
+}
+table{
+    padding-left: $size;
+}
+    
+th,
+    td {
+        color: $text-color;
+        border: 1px solid  $text-color;
+       
+
+    }

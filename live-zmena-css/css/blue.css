@@ -1,0 +1,54 @@
+body {
+  margin: auto;
+  background: #3700ff;
+  padding: 10px;
+}
+
+h1 {
+  color: #00eeff;
+  text-align: center;
+}
+
+h2 {
+  color: #00eeff;
+  text-align: center;
+}
+
+p {
+  color: #00eeff;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 25px;
+}
+
+header {
+  width: 100%;
+  display: center;
+  padding-bottom: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  padding: 1em;
+  border-radius: 0.25em;
+  color: #3700ff;
+  background: #00eeff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+table {
+  padding-left: 100em;
+}
+
+th,
+td {
+  color: #00eeff;
+  border: 1px solid #00eeff;
+}
+/*# sourceMappingURL=blue.css.map */
