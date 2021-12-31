@@ -2,11 +2,14 @@ body {
   margin: auto;
   background: $bg-color;
   padding: 10px;
+  font-family: $font;
+  font-size: $velikost;
 }
 
 h1 {
   color: $text-color;
   text-align: center;
+  
 }
 h2 {
   color: $text-color;
@@ -18,21 +21,35 @@ p {
   font-size: large;
   margin-bottom: 25px;
 }
+ul {
+ color: $text-color; 
+ padding-left: 60em;
+ text-align: center;
+}
 
 header {
   width: 100%;
   display: center;
   padding-bottom: 25px;
   flex-direction: column;
+  text-align: center;
 }
-
+article {
+  background-color: $bg-color;
+  color: $text-color; 
+  text-align: center; 
+  padding-left: 30em;
+  width: 50%; 
+  border: 1px solid $bg-color;
+ 
+} 
 footer {
   width: 100%;
   display: center;
   padding-bottom: 25px;
   flex-direction: column;
+  text-align: center;
 }
-
 button {
   padding: 1em;
   border-radius: 0.25em;
@@ -45,9 +62,11 @@ button {
 table {
   padding-left: $size;
 }
-
 th,
 td {
   color: $text-color;
   border: 1px solid $text-color;
+}
+a {
+  color: $text-color;
 }
