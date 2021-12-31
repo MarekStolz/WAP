@@ -3,7 +3,7 @@ body {
   background: #00ff55;
   padding: 10px;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 30px;
+  font-size: 17px;
 }
 
 h1 {
@@ -26,7 +26,6 @@ p {
 ul {
   color: #b700ff;
   padding-left: 60em;
-  text-align: center;
 }
 
 header {

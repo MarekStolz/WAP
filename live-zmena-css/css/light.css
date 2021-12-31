@@ -3,7 +3,7 @@ body {
   background: white;
   padding: 10px;
   font-family: "Brush Script MT", cursive;
-  font-size: 10px;
+  font-size: 19px;
 }
 
 h1 {
@@ -26,7 +26,6 @@ p {
 ul {
   color: black;
   padding-left: 60em;
-  text-align: center;
 }
 
 header {
