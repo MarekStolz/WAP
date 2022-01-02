@@ -4,6 +4,7 @@ document.getElementById("mode").onclick = () => {
   mode = mode == "light" ? "dark" : "light";
   event.target.innerText =
     mode == "light" ? "na tmavý režim" : "na světlý režim";
+
   document.getElementById("link-style").href = "css/" + mode + ".css";
 
   console.log("nastaveno na " + mode);
