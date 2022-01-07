@@ -11,9 +11,11 @@ body{
 
 header{
   position: fixed;
-  padding-left: 50%;
-  padding-right: 30%;
+  text-align: center;
   background-color: rgb(26, 126, 26);
+  padding: 10px;
+  top: 0px;
+  width: 100%;  
 }
 footer{
   padding-top: 1em;
@@ -32,7 +34,7 @@ p{
 {
   display: block;
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 30px;
   z-index: 3;
   -webkit-user-select: none;
