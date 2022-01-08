@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
 }
+html{
+  height: 90%;
+}
 body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
   background: #232323;
   color: #cdcdcd;
   font-size: medium;
@@ -19,12 +26,13 @@ header {
   width: 100%;
 }
 footer {
-  position: static;
-  bottom: 0;
-  width: 110%;
-  margin-top: auto;
   background-color: rgb(26, 126, 26);
   color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
   text-align: center;
 }
 .pata .pt {
