@@ -7,6 +7,7 @@ body {
   color: #cdcdcd;
   font-size: medium;
   font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 header {
@@ -18,10 +19,9 @@ header {
   width: 100%;
 }
 footer {
-  position: flex;
-  left: 0;
+  position: static;
   bottom: 0;
-  width: 100%;
+  width: 110%;
   margin-top: auto;
   background-color: rgb(26, 126, 26);
   color: white;
@@ -40,6 +40,15 @@ h2 {
 p {
   text-align: center;
 }
+.nadpis{
+  cursor: pointer;
+}
+.nadpis:active{
+  transform: scale(1, 0.9);
+  color:#232323;
+  transition: transform 0.2s color 0.2s;
+  }
+
 .ba { 
   width: 50em;
   height: 30em;
@@ -75,8 +84,7 @@ p {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
-
+  color: white;
   transition: color 0.3s ease;
 }
 
@@ -91,13 +99,10 @@ p {
   position: absolute;
   top: -7px;
   left: -5px;
-
   cursor: pointer;
-
   opacity: 0; 
   z-index: 2; 
-
-  -webkit-touch-callout: none;
+ -webkit-touch-callout: none;
 }
 
 
@@ -107,14 +112,10 @@ p {
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-
-  background: #cdcdcd;
+  background: white;
   border-radius: 3px;
-
   z-index: 1;
-
   transform-origin: 4px 0px;
-
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
@@ -131,7 +132,7 @@ p {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: white;
 }
 
 
@@ -153,7 +154,7 @@ p {
   padding: 50px;
   padding-top: 125px;
 
-  background: white;
+  background: #232323;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
