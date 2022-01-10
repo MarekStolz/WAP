@@ -1,0 +1,42 @@
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+body{
+  background: linear-gradient(-45deg, #1861c0, #a1bddd, #1b8fb9, #2b92d6);
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+main{
+  margin-top: 10rem;
+  display: absolute;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+}
+h1{
+  color: white;
+  margin-bottom: 5rem;
+  font-size: 150px;
+}
+input{
+  font-size: large;
+  width: 200px;
+  height: 50px;
+}
+button {
+  width: 100px;
+  height: 60px;
+  background-color: white;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+ul {
+  margin-top: 2rem;
+}
+li{
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 2em;
+}
