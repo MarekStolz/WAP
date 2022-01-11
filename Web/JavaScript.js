@@ -17,3 +17,4 @@ function generateRandomPicture(array){
 	let randomNum = Math.floor(Math.random() * array.length); 
 	image.setAttribute("src", array[randomNum]);
 }
+

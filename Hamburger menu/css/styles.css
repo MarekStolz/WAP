@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 90%;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: #232323;
+  color: #cdcdcd;
+  font-size: medium;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+header {
+  position: fixed;
+  text-align: center;
+  background-color: rgb(26, 126, 26);
+  padding: 10px;
+  top: 0px;
+  width: 100%;
+}
+footer {
+  background-color: rgb(26, 126, 26);
+  color: white;
+  position: absolute;
+  height: 5%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+a {
+  color: white;
+  font-size: large;
+}
+
+.menu-left ul li {
+  padding-top: 0.8em;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 5%;
+}
+
+h2 {
+  padding-top: 3em;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+.nadpis {
+  cursor: pointer;
+}
+.nadpis:active {
+  transform: scale(1, 0.9);
+  color: #232323;
+  transition: transform 0.2s color 0.2s;
+}
+.w3-left,
+.w3-right,
+.w3-badge {
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+}
+
+.ba {
+  width: 50em;
+  height: 30em;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-color: white;
+}
+.mySlides {
+  width: 20rem;
+  display: none;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-color: white;
+}
