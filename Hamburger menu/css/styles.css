@@ -52,8 +52,11 @@ h2 {
   text-align: center;
 }
 p {
-  text-align: center;
+  text-align: block;
+  margin-left: 4em;
+  margin-right: 4em;
 }
+
 .nadpis {
   cursor: pointer;
 }
@@ -62,17 +65,15 @@ p {
   color: #232323;
   transition: transform 0.2s color 0.2s;
 }
-.w3-left,
-.w3-right,
-.w3-badge {
-  float: left;
-  position: relative;
-  cursor: pointer;
-}
-.w3-badge {
-  height: 13px;
-  width: 13px;
+.leftK,
+.rightK {
+  position: absolute;
+  cursor: pointer; 
+  height: 109px;
+  width: 19px;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ba {
@@ -86,8 +87,9 @@ p {
   border-style: inset;
   border-color: white;
 }
-.mySlides {
+.mike {
   width: 20rem;
+  height: 30rem;
   display: none;
   margin-top: 30px;
   margin-bottom: 10px;
