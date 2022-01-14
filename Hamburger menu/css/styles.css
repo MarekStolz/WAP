@@ -29,10 +29,10 @@ footer {
   background-color: rgb(26, 126, 26);
   color: white;
   position: absolute;
-  height: 5%;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 1;
+  padding: 1rem;
   text-align: center;
 }
 a {
