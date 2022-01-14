@@ -65,20 +65,23 @@ p {
   color: #232323;
   transition: transform 0.2s color 0.2s;
 }
-.leftK,
-.rightK {
-  position: absolute;
+.left,
+.right {
+  position: sticky;
   cursor: pointer; 
-  height: 109px;
+  height: 19px;
   width: 19px;
   padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ba {
-  width: 50em;
-  height: 30em;
+  width: 50%;
+  height: 70%;
   display: block;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -88,8 +91,8 @@ p {
   border-color: white;
 }
 .mike {
-  width: 20rem;
-  height: 30rem;
+  width: 50%;
+  height: 70%;
   display: none;
   margin-top: 30px;
   margin-bottom: 10px;
