@@ -68,7 +68,7 @@ p {
 .left,
 .right {
   position: sticky;
-  cursor: pointer; 
+  cursor: pointer;
   height: 19px;
   width: 19px;
   padding: 0;
@@ -100,4 +100,7 @@ p {
   margin-right: auto;
   border-style: inset;
   border-color: white;
+}
+.x{
+  color: transparent;
 }
