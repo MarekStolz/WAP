@@ -73,7 +73,7 @@ p {
   cursor: pointer;
   height: 630px;
   width: 30px;
-  }
+}
 .ba {
   width: 50%;
   height: 70%;
@@ -81,7 +81,7 @@ p {
   border-style: inset;
   border-color: white;
 }
-.mike {
+.mike, canvas {
   max-width: 50%;
   max-width: 80%;
   display: block;
@@ -92,7 +92,9 @@ p {
   border-style: inset;
   border-color: white;
 }
-.x{
+.x {
   color: transparent;
 }
-
+canvas {
+  margin-top: 300px;
+}
