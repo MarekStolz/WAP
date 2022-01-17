@@ -81,7 +81,8 @@ p {
   border-style: inset;
   border-color: white;
 }
-.mike, canvas {
+.mike,
+canvas {
   max-width: 50%;
   max-width: 80%;
   display: block;
@@ -96,5 +97,9 @@ p {
   color: transparent;
 }
 canvas {
+  margin-top: 300px;
+}
+.down {
+  margin-left: 2em;
   margin-top: 300px;
 }
