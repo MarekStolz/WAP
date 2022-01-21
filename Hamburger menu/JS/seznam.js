@@ -2,7 +2,7 @@ window.onload = function () {
   var txt = document.getElementById("txt");
   document.getElementById("link").onclick = function (code) {
     this.href =
-      "data:text/plain;charset=utf-11," + encodeURIComponent(txt.value);
+      "data:text/plain;charset=utf-8," + encodeURIComponent(txt.value);
   };
 };
 
@@ -18,11 +18,3 @@ function pridej() {
   list.appendChild(X);
   document.getElementById("txt").value = "";
 }
-
-var input = document.getElementById("txt");
-input.addEventListener("keyup", function (event) {
-  if (event.keyCode === 13) {
-    event.preventDefault();
-    document.getElementById("myBtn").click();
-  }
-});
