@@ -20,13 +20,13 @@ body {
 header {
   position: fixed;
   text-align: center;
-  background-color: rgb(26, 126, 26);
+  background-color: rgb(26, 94, 126);
   padding: 10px;
   top: 0px;
   width: 100%;
 }
 footer {
-  background-color: rgb(26, 126, 26);
+  background-color: rgb(26, 94, 126);
   color: white;
   position: absolute;
   right: 0;
