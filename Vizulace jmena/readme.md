@@ -1,5 +1,7 @@
 Text se pohybuje po obrazovce a při kontaktu se s libovolnou stranou změní content a barvu.
 Při držení tlačítka na myši zrychlí.
-![Snímek obrazovky (21)](https://user-images.githubusercontent.com/81717582/154349837-5caa1ed4-0644-44e0-a86a-fd605942954d.png)
 
-![Snímek obrazovky (22)](https://user-images.githubusercontent.com/81717582/154349844-9d5814f8-56f1-4200-9b14-890a0a313d73.png)
+
+
+![Snímek obrazovky (23)](https://user-images.githubusercontent.com/81717582/154356442-dd925c15-3951-4207-8fd5-6b9a25bbd92e.png)
+![Snímek obrazovky (24)](https://user-images.githubusercontent.com/81717582/154356447-c00fc737-bbb6-48d8-a12e-fd156f6ff4cf.png)
