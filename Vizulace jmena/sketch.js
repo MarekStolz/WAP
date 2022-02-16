@@ -2,16 +2,20 @@ let x = 200;
 let y = 200;
 let xspeed = 4;
 let yspeed = -3;
+let r = 7;
+let b = 47;
+let g = 48;
 let content = "MAREK STOLZ";
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(7, 40, 46);
   textSize(150);
   textStyle(BOLD);
+  noStroke();
   text(content, x, y, 50);
+  background(r, b, g, 100);
 
   if (x > width) {
     xspeed = xspeed * -1;
@@ -26,7 +30,7 @@ function draw() {
   if (y > height) {
     yspeed = yspeed * -1;
     content = "MAREK";
-    fill(196, 51, 222);
+    fill(0);
   } else if (y < 0) {
     let content = "MAREK STOLZ";
     yspeed = yspeed * -1;
