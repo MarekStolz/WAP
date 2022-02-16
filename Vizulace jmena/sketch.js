@@ -8,28 +8,34 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(7, 40, 46);
   textSize(50);
-  textFont('assets/Bold.ttf');
-  textStyle(BOLDITALIC);
+  textStyle(BOLD);
   text(content, x, y, 50);
 
   if (x > width) {
     xspeed = xspeed * -1;
-    fill(50, 255, 0);
+    let content = "Stolz";
+    fill(0, 105, 252);
   } else if (x < 0) {
+    content = "Stolz Marek";
     xspeed = xspeed * -1;
-    fill(255, 100, 0);
+    fill(255, 255, 255);
   }
 
   if (y > height) {
     yspeed = yspeed * -1;
-    fill(200, 0, 255);
+    content = "Marek";
+    fill(196, 51, 222);
   } else if (y < 0) {
+    let content = "Marek Stolz";
     yspeed = yspeed * -1;
-    fill(200, 6, 25);
+    fill(255, 255, 255);
   }
-
-  x = x + xspeed;
+  if (mouseIsPressed === true) {
+    x = x - xspeed * 2;
+    y = y + yspeed * 2;
+  }
+  x = x - xspeed;
   y = y + yspeed;
 }
