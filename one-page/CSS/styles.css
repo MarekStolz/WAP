@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: #232323;
+  color: #cdcdcd;
+  font-size: medium;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  background-color: #1a5e7e;
+  padding: 10px;
+  top: 0px;
+  width: 100%;
+}
+
+footer {
+  background-color: #1a5e7e;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1px;
+}
+
+a {
+  color: white;
+  font-size: small;
+}
+
+/*
+  .menu-left ul li {
+    padding-top: 0.8em;
+    display: inline;
+    vertical-align: text-top;
+    width: 5%;
+  }
+  */
+p {
+  padding: 40px 30px 20px;
+  text-align: block;
+  font-size: large;
+}
+
+.nadpis {
+  cursor: pointer;
+}
+
+.nadpis:active {
+  -webkit-transform: scale(1, 0.9);
+          transform: scale(1, 0.9);
+  color: #232323;
+  -webkit-transition: -webkit-transform 0.2s color 0.2s;
+  transition: -webkit-transform 0.2s color 0.2s;
+  transition: transform 0.2s color 0.2s;
+  transition: transform 0.2s color 0.2s, -webkit-transform 0.2s color 0.2s;
+}
+/*# sourceMappingURL=styles.css.map */
