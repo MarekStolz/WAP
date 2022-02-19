@@ -12,7 +12,6 @@ body {
   min-height: 100%;
   background: #232323;
   color: #cdcdcd;
-  font-size: medium;
   font-family: "Avenir Next", "Avenir", sans-serif;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
@@ -37,7 +36,7 @@ a {
 } 
 p {
   padding: 40px 30px 20px;
-  text-align: block;
+  text-align: center;
   font-size: large;
 }
 .logo{
@@ -45,6 +44,7 @@ p {
   width: 32px;
 }
 .first ,#one ,#two ,#three{
+  font-size: medium;
   padding-top: 5em;
   padding: 5em ;
   margin: auto;
@@ -52,6 +52,7 @@ p {
   text-align: center;
   width: 80em;
   background-color: #4d0000;
+
 }
 .first-img{
   width: 50em;
@@ -75,7 +76,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #00BAF0;
+  background-color: #ffffff;
   background: linear-gradient(to right, #870000, #190a05);
   color: rgb(255, 255, 255);
   height: 50px;
@@ -88,6 +89,7 @@ p {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-right: 50px;
 }
 
 .menu > li {
@@ -144,7 +146,7 @@ p {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .menu-button-container {
     display: flex;
   }
@@ -157,6 +159,7 @@ p {
     width: 100%;
     justify-content: center;
     align-items: center;
+    
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -179,13 +182,18 @@ p {
     width: 100%;
     overflow: hidden;
     color: rgb(255, 255, 255);
-    background-color: #222;
+    background-color: rgba(34, 34, 34, 0.733);
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
   .first-img{
-    width: 20em;
+    width: 15em;
     height: 15em;
+}
+.first ,#one ,#two ,#three{
+  font-size: small;
+  width: 15em;
+  
 }
 }
