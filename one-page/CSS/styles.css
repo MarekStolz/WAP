@@ -72,4 +72,17 @@ p {
   transition: transform 0.2s color 0.2s;
   transition: transform 0.2s color 0.2s, -webkit-transform 0.2s color 0.2s;
 }
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 15px;
+  }
+  h1 {
+    font-size: medium;
+  }
+  #menuToggle {
+    top: 10px;
+    left: 20px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
