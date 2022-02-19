@@ -16,16 +16,9 @@ body {
   font-family: "Avenir Next", "Avenir", sans-serif;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
-header {
-  position: absolute;
-  text-align: center;
-  background-color: rgb(26, 94, 126);
-  padding: 10px;
-  top: 0px;
-  width: 100%;
-}
+
 footer {
-  background-color: rgb(26, 94, 126);
+  background: linear-gradient(to left, #870000, #190a05);
   text-align: center;
   width: 100%;
   color: white;
@@ -34,45 +27,165 @@ footer {
   bottom: 0;
   padding: 1px;
 }
+h2 ,h1{
+  text-align: center;
+}
 a {
   color: white;
-  font-size: small;
-}
-/*
-  .menu-left ul li {
-    padding-top: 0.8em;
-    display: inline;
-    vertical-align: text-top;
-    width: 5%;
-  }
-  */
+  text-decoration: none;
+ 
+} 
 p {
   padding: 40px 30px 20px;
   text-align: block;
   font-size: large;
 }
+.logo{
+  height: 32px;
+  width: 32px;
+}
+.first ,#one ,#two ,#three{
+  padding-top: 5em;
+  padding: 5em ;
+  margin: auto;
+  margin-top: 5em;
+  text-align: center;
+  width: 80em;
+  background-color: #4d0000;
+}
+.first-img{
+  width: 50em;
+  height: 30em;
+  border-style: inset;
+  border-color:#333
+}
+.one{
 
-.nadpis {
+}
+.two{
+
+}
+.three{
+  
+}
+
+//menu
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #00BAF0;
+  background: linear-gradient(to right, #870000, #190a05);
+  color: rgb(255, 255, 255);
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
   cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.nadpis:active {
-  transform: scale(1, 0.9);
-  color: #232323;
-  transition: transform 0.2s color 0.2s;
+
+#menu-toggle {
+  display: none;
 }
-@media only screen and (max-width: 768px) {
-  header{
-    height: 15px;
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 700px) {
+  .menu-button-container {
+    display: flex;
   }
-  h1{
-    font-size:medium;
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
-  #menuToggle {
-    top: 10px;
-    left: 20px;
-    }
-    
-#menu {
-  margin: -2px -20px 0px;
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 5.5em 0;
+    width: 100%;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    background-color: #222;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+  .first-img{
+    width: 20em;
+    height: 15em;
+}
 }
