@@ -1,17 +1,18 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 html {
   height: 100%;
 }
 body {
   position: relative;
+ // background-image: url("/one-page/IMG/New_York.jpg");
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
   background: #232323;
-  color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
   overflow-x: hidden; /* Hide horizontal scrollbar */
 }
@@ -23,51 +24,62 @@ footer {
   color: white;
   position: absolute;
   right: 0;
+  flex: 1;
   bottom: 0;
+  border-radius: 35px 35px 0px 0px;
   padding: 1px;
 }
-h2 ,h1{
+h2 {
   text-align: center;
+  padding-bottom: 15px;
+}
+h6 {
+  float: right;
+  margin-right: 20px;
 }
 a {
   color: white;
   text-decoration: none;
- 
-} 
+}
 p {
   padding: 40px 30px 20px;
+  padding-top: 100px;
   text-align: center;
   font-size: large;
 }
-.logo{
+.logo {
   height: 32px;
   width: 32px;
 }
-.first ,#one ,#two ,#three{
+.first,
+#one,
+#two,
+#three {
   font-size: medium;
   padding-top: 5em;
-  padding: 5em ;
+  padding: 5em;
   margin: auto;
   margin-top: 5em;
   text-align: center;
-  width: 80em;
-  background: linear-gradient(to right, #720202, #190a05);
-
+  width: 90em;
+  border-radius: 25px;
+  border: outset;
+  border-color: rgb(136, 118, 118);
+  background: linear-gradient(to left, #720202, #190a05);
 }
-.first-img{
-  width: 50em;
-  height: 30em;
+.first-img {
+  width: 30em;
+  height: 20em;
+  border-radius: 10px;
   border-style: inset;
-  border-color:#333
+  border-color: #333;
+  float: right;
 }
-.one{
-
+#one {
+  background: linear-gradient(to right, #720202, #190a05);
 }
-.two{
-
-}
-.three{
-  
+#three {
+  background: linear-gradient(to right, #720202, #190a05);
 }
 
 //menu
@@ -79,8 +91,9 @@ p {
   background-color: #ffffff;
   background: linear-gradient(to right, #870000, #190a05);
   color: rgb(255, 255, 255);
-  height: 50px;
+  height: 60px;
   padding: 1em;
+  border-radius: 25px;
 }
 
 .menu {
@@ -123,12 +136,12 @@ p {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -145,21 +158,20 @@ p {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
+//media
 @media (max-width: 800px) {
   .menu-button-container {
     display: flex;
   }
   .menu {
     position: absolute;
-    top: 0;
+    top: 40px;
     margin-top: 50px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
-    
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -187,13 +199,117 @@ p {
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-  .first-img{
+  .first-img {
     width: 15em;
     height: 15em;
+
+  }
+  .first,
+  #one,
+  #two,
+  #three {
+    font-size: small;
+    width: 15em;
+    float: inline-end;
+  }
+  .obrazky h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .obrazky .text-container {
+    flex-direction: column;
+  }
 }
-.first ,#one ,#two ,#three{
-  font-size: small;
-  width: 15em;
-  
+
+//img
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+
+.obrazky {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  color: #ffffff;
 }
+.obrazky:nth-child(2) {
+background: #180600;
+}
+.obrazky:nth-child(4) {
+ background: #190a05;
+}
+.obrazky .container {
+  margin: 100px;
+}
+.obrazky h1 {
+  font-size: 3rem;
+  margin: 20px;
+}
+.obrazky h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.obrazky .text-container {
+  display: flex;
+}
+.obrazky .text-container .text-box {
+  margin: 20px;
+  padding: 20px;
+  background: #870000;
+  border-radius: 25px;
+}
+.obrazky .text-container .text-box h3 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
