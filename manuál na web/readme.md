@@ -20,6 +20,10 @@
     Live server: Umožňuje otevřít testovací stránku kodu, která se po uložení změní.
     Pretrier: Pomocí zkratky SHIFT + ALT + F, zformátuje kod do čitelné podoby.
     SASS: Rozšíření, které vám pomůže zkompilovat vaše soubory SASS/SCSS do souborů CSS v reálném čase s živým obnovením prohlížeče.
+    HTML CSS Support: Kaskádové styly
+    HTML Snippets: Celé Html s html5
+    JavaScript (ES6) code snippets: JavaScript 
+
 
 # Doporučené klávesové zkratky:
 
