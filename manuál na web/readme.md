@@ -6,9 +6,10 @@
         -Nejnovější verzi VS Code (https://code.visualstudio.com/download)
         -Git pro váš operační systém (https://git-scm.com/downloads)
         -Aktivní repozitář na GitHubu nebo Visual Studio Online
-    -Klikneme dole na profil a vybereme to na obrázku.
+        
+        -Klikneme dole na profil a vybereme to na obrázku.
 ![Snímek obrazovky (26)](https://user-images.githubusercontent.com/81717582/154858629-1fb26dc6-26ad-40fc-baa1-b7fc98e91f1b.png)
-Po té vybereme zase na obrázku. To nás přesměruje na prohlížeč kde povolíme autorizaci.
+        -Po té vybereme zase na obrázku. To nás přesměruje na prohlížeč kde povolíme autorizaci.
 ![Snímek obrazovky (25)](https://user-images.githubusercontent.com/81717582/154858639-878e83a9-343d-47ab-a165-e5e7f79b86b8.png)
 
 # Moduly:
