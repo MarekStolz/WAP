@@ -8,7 +8,7 @@ html {
 }
 body {
   position: relative;
- // background-image: url("/one-page/IMG/New_York.jpg");
+  // background-image: url("/one-page/IMG/New_York.jpg");
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
@@ -59,7 +59,7 @@ p {
   border-color: #333;
   float: right;
 }
-header{
+header {
   padding-bottom: 10px;
 }
 //menu
@@ -181,7 +181,6 @@ header{
   .first-img {
     width: 15em;
     height: 15em;
-
   }
   .obrazky h1 {
     font-size: 2rem;
@@ -204,7 +203,7 @@ header{
   color: #ffffff;
 }
 .obrazky:nth-child(2) {
-  background: linear-gradient(to top, #870000, #190a05);;
+  background: linear-gradient(to top, #870000, #190a05);
 }
 .obrazky:nth-child(4) {
   background: linear-gradient(to bottom, #870000, #190a05);
