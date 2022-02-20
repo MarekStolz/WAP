@@ -64,24 +64,6 @@ p {
   width: 32px;
 }
 
-.first,
-#one,
-#two,
-#three {
-  font-size: medium;
-  padding-top: 5em;
-  padding: 5em;
-  margin: auto;
-  margin-top: 5em;
-  text-align: center;
-  width: 90em;
-  border-radius: 25px;
-  border: outset;
-  border-color: #887676;
-  background: -webkit-gradient(linear, right top, left top, from(#720202), to(#190a05));
-  background: linear-gradient(to left, #720202, #190a05);
-}
-
 .first-img {
   width: 30em;
   height: 20em;
@@ -91,14 +73,8 @@ p {
   float: right;
 }
 
-#one {
-  background: -webkit-gradient(linear, left top, right top, from(#720202), to(#190a05));
-  background: linear-gradient(to right, #720202, #190a05);
-}
-
-#three {
-  background: -webkit-gradient(linear, left top, right top, from(#720202), to(#190a05));
-  background: linear-gradient(to right, #720202, #190a05);
+header {
+  padding-bottom: 10px;
 }
 
 .top-nav {
@@ -263,14 +239,6 @@ p {
     width: 15em;
     height: 15em;
   }
-  .first,
-  #one,
-  #two,
-  #three {
-    font-size: small;
-    width: 15em;
-    float: inline-end;
-  }
   .obrazky h1 {
     font-size: 2rem;
     text-align: center;
@@ -299,11 +267,13 @@ p {
 }
 
 .obrazky:nth-child(2) {
-  background: #180600;
+  background: -webkit-gradient(linear, left bottom, left top, from(#870000), to(#190a05));
+  background: linear-gradient(to top, #870000, #190a05);
 }
 
 .obrazky:nth-child(4) {
-  background: #190a05;
+  background: -webkit-gradient(linear, left top, left bottom, from(#870000), to(#190a05));
+  background: linear-gradient(to bottom, #870000, #190a05);
 }
 
 .obrazky .container {
