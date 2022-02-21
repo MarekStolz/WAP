@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: block;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: #232323;
+  color: rgb(255, 255, 255);
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+h1 {
+  padding-top: 10px;
+  text-align: center;
+}
+section {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid rgb(65, 62, 62);
+  background-color: gray;
+  padding: 0.5rem;
+  text-align: left;
+}
