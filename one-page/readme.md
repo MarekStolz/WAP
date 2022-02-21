@@ -9,4 +9,5 @@ Tady je Lighthouse na PC
 ![pc](https://user-images.githubusercontent.com/81717582/154989049-33fe9c79-d6c6-4b6f-9db6-58c38f1ba7fe.png)
 
 Fotka SEO-SERVIS
-![Uploading Snímek obrazovky (30).png…]()
+![Snímek obrazovky (30)](https://user-images.githubusercontent.com/81717582/154990003-8c7c0a91-3957-4c20-ac6f-bd8a20bec77c.png)
+
