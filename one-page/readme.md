@@ -1,5 +1,5 @@
 WEB
-Zde je fotka mého webu (https://http://stolz.xf.cz/)
+Zde je fotka mého webu (http://stolz.xf.cz/)
 ![Snímek obrazovky (27)](https://user-images.githubusercontent.com/81717582/154988915-4fce846a-c525-4525-9885-8e2104efbacc.png)
 
 Tady je Lighthouse na telefon
