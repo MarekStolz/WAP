@@ -10,10 +10,19 @@
 
 <body>
     <?php
+    $mesic = [
+        "Leden", "Únor", "Březen",
+        "Duben", "Květen", "Červen",
+        "Červenec", "Srpen", "Září",
+        "Říjen", "Listopad", "Prosinec"
+    ];
+    $den = [
+        "Pondělí", "Úterý", "Středa", "Čtvrek", "Pátek", "Sobota", "Neděle"
+    ];
     echo "<h1>Datum a Čas</h1>";
-    $time = date('Y-m-d H:i:s');
+    $time = date('d-m-Y H:i:s');
     echo "<p>$time</p>";
-
+    
     echo "<ul>";
     $hodin = intval(date("H"));
     echo "<li>";
@@ -21,6 +30,7 @@
     for ($li = 0; $li <= $hodin; $li++) {
         echo "I";
     }
+    echo "($hodin)";
     echo "</li>";
     $minut = intval(date("i"));
     echo "<li>";
@@ -28,6 +38,7 @@
     for ($li = 0; $li <= $minut; $li++) {
         echo "I";
     }
+    echo "($minut)";
     echo "</li>";
     $sekund = intval(date("s"));
     echo "<li>";
@@ -35,6 +46,7 @@
     for ($li = 0; $li <= $sekund; $li++) {
         echo "I";
     }
+    echo "($sekund)";
     echo "</li>";
     echo "</ul>";
 
