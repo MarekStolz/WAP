@@ -19,10 +19,14 @@
     $den = [
         "Pondělí", "Úterý", "Středa", "Čtvrek", "Pátek", "Sobota", "Neděle"
     ];
+
     echo "<h1>Datum a Čas</h1>";
     $time = date('d-m-Y H:i:s');
     echo "<p>$time</p>";
-    
+    echo $den[date("N")];
+    echo " ", date("j. ");
+    echo $mesic[date("n")];
+    echo date(" Y H:i:s");
     echo "<ul>";
     $hodin = intval(date("H"));
     echo "<li>";
