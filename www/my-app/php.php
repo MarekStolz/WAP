@@ -14,23 +14,23 @@ require "init.php";
 <body>
     <main>
         <div>
-        <form>
-            <h1>Karel</h1>
-            <fieldset>
-                <legend>Příkazy</legend>
-                <textarea rows="10">reset</textarea>
-                <button>Proveď</button>
-            </fieldset>
-        </form>
-        <div>
-            <?php
-            require "gene-table.php";
-            ?>
-        </div>
+            <form>
+                <h1>Karel</h1>
+                <fieldset>
+                    <legend>Příkazy</legend>
+                    <textarea name="commands" rows="10"><?php echo filter_input(INPUT_POST, 'commands'); ?></textarea>
+                    <button>Proveď</button>
+                </fieldset>
+            </form>
+            <div>
+                <?php
+                require "gene-table.php";
+                ?>
+            </div>
 
-        <p>Manual</p>
+            <p>Manual</p>
         </div>
-</div>
+        </div>
 
         </content>
     </main>
