@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    height: 100%;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    background: #ffd500;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  footer {
+    background: #005bbb;
+    text-align: center;
+    width: 100%;
+    color: white;
+    position: absolute;
+    right: 0;
+    flex: 1;
+    bottom: 0;
+    padding: 1px;
+  }
+  .top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    background: #005bbb;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    width: 100%;
+    padding: 1em;
+  }
+  .logo {
+    height: 32px;
+    width: 32px;
+  }
+  .uvod {
+    min-height: fit-content;
+    display: center;
+    background: #005bbb;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    color: #ffffff;
+    margin-top: 2em;
+  }
+  @media (max-width: 800px) {
+    .top{
+      font-size: small;
+    }
+    .img {
+      width: 15em;
+      height: 15em;
+    }
+    .obrazky h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    .obrazky .text-container {
+      flex-direction: column;
+    }
+  }
