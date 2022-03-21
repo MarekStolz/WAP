@@ -96,4 +96,41 @@ footer {
             flex-direction: column;
   }
 }
+
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+@media (min-width: 500px) {
+  .gallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 800px) {
+  .gallery {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gallery > div {
+  padding: 1em;
+  background-color: #222;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.gallery > div:hover {
+  z-index: 999;
+  -webkit-box-shadow: 0 0 2em 2em #000;
+          box-shadow: 0 0 2em 2em #000;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 /*# sourceMappingURL=style.css.map */
