@@ -11,7 +11,7 @@
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
-    background: #ffd500;
+    background: #222;
     font-family: "Avenir Next", "Avenir", sans-serif;
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
@@ -38,6 +38,7 @@
     height: 60px;
     width: 100%;
     padding: 1em;
+    margin-bottom: 2em;
   }
   .logo {
     height: 32px;
@@ -53,21 +54,18 @@
     color: #ffffff;
     margin-top: 2em;
   }
+  .img {
+    max-width: 10em;
+    max-height: 5em;
+    border-style:outset;
+    border-color: #222;
+  }
   @media (max-width: 800px) {
     .top{
       font-size: small;
     }
-    .img {
-      width: 15em;
-      height: 15em;
-    }
-    .obrazky h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-    .obrazky .text-container {
-      flex-direction: column;
-    }
+    
+
   }
   .gallery{
     display: grid;
@@ -81,11 +79,12 @@
 }
     > div {
         padding: 1em;
-        background-color: #222;
+        margin: 2em;
+        background-color: #ffd500;
         transition: all 250ms ease-in-out;
         &:hover{
             z-index: 999;
-            box-shadow: 0 0 2em 2em #000;
+            cursor: pointer;
             transform: scale(1.05);
         }
 
