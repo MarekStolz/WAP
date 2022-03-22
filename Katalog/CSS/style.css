@@ -94,6 +94,8 @@ footer {
 .gallery {
   display: -ms-grid;
   display: grid;
+  justify-items: center;
+  position: relative;
   gap: 1em;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -114,8 +116,8 @@ footer {
 }
 
 .gallery > div {
-  padding: 1em;
-  margin: 2em;
+  padding: 10em;
+  margin: 5em;
   background-color: #ffd500;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;

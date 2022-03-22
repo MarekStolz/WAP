@@ -67,6 +67,8 @@ footer {
 }
 .gallery {
   display: grid;
+  justify-items: center;
+  position: relative;
   gap: 1em;
   grid-template-columns: 1fr;
   @media (min-width: 500px) {
@@ -76,8 +78,8 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
   > div {
-    padding: 1em;
-    margin: 2em;
+    padding: 10em;
+    margin: 5em;
     background-color: #ffd500;
     transition: all 250ms ease-in-out;
     &:hover {
