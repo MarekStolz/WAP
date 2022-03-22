@@ -1,92 +1,89 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    height: 100%;
-  }
-  body {
-    position: relative;
-    margin: 0;
-    padding-bottom: 6rem;
-    min-height: 100%;
-    background: #222;
-    font-family: "Avenir Next", "Avenir", sans-serif;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
-  }
-  
-  footer {
-    background: #005bbb;
-    text-align: center;
-    width: 100%;
-    color: white;
-    position: absolute;
-    right: 0;
-    flex: 1;
-    bottom: 0;
-    padding: 1px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  background: #222;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+footer {
+  background: #005bbb;
+  text-align: center;
+  width: 100%;
+  color: white;
+  position: absolute;
+  right: 0;
+  flex: 1;
+  bottom: 0;
+  padding: 1px;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  background: #005bbb;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+.logo {
+  height: 32px;
+  width: 32px;
+}
+.uvod {
+  min-height: fit-content;
+  display: center;
+  background: #005bbb;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 25px;
+  color: #ffffff;
+  margin-top: 2em;
+}
+.img {
+  max-width: 10em;
+  max-height: 5em;
+  border-style: inset;
+  border-color: #222;
+}
+@media (max-width: 800px) {
   .top {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffffff;
-    background: #005bbb;
-    color: rgb(255, 255, 255);
-    height: 60px;
-    width: 100%;
-    padding: 1em;
-    margin-bottom: 2em;
+    font-size: small;
   }
-  .logo {
-    height: 32px;
-    width: 32px;
-  }
-  .uvod {
-    min-height: fit-content;
-    display: center;
-    background: #005bbb;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 25px;
-    color: #ffffff;
-    margin-top: 2em;
-  }
-  .img {
-    max-width: 10em;
-    max-height: 5em;
-    border-style:outset;
-    border-color: #222;
-  }
-  @media (max-width: 800px) {
-    .top{
-      font-size: small;
-    }
-    
-
-  }
-  .gallery{
-    display: grid;
-    gap: 1em;
-    grid-template-columns: 1fr;
-    @media (min-width:500px) {
+}
+.gallery {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+  @media (min-width: 500px) {
     grid-template-columns: 1fr 1fr;
-}
-    @media (min-width:800px) {
+  }
+  @media (min-width: 800px) {
     grid-template-columns: repeat(3, 1fr);
-}
-    > div {
-        padding: 1em;
-        margin: 2em;
-        background-color: #ffd500;
-        transition: all 250ms ease-in-out;
-        &:hover{
-            z-index: 999;
-            cursor: pointer;
-            transform: scale(1.05);
-        }
-
+  }
+  > div {
+    padding: 1em;
+    margin: 2em;
+    background-color: #ffd500;
+    transition: all 250ms ease-in-out;
+    &:hover {
+      z-index: 999;
+      cursor: pointer;
+      transform: scale(1.05);
     }
+  }
 }
