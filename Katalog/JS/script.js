@@ -1,7 +1,7 @@
 const gallery = document.getElementById("gallery");
-for(let index in data ){
+for (let index in data) {
   let item = data[index];
-  let ele = document.createElement('div');
+  let ele = document.createElement("div");
   ele.innerHTML = `
   <img src="${item.images}" class="img" alt="${item.description}"> 
   <h2>${item.name}</h2>
@@ -11,4 +11,4 @@ for(let index in data ){
   `;
 
   gallery.appendChild(ele);
-};
+}
