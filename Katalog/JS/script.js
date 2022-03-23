@@ -9,19 +9,20 @@ for (let index in data) {
   <p>${item.description}</p>
   <p>${item.price}</p>
   <h3>${item.autor}</h3>
-  `; gallery.appendChild(ele);
+  `;
+  gallery.appendChild(ele);
 
-  ele.onclick = () => {
+  /*ele.onclick = () => {
     detail.innerHTML = `<div class="detail-item">
-    <img src="${item.images}" class="img" alt="${item.description}"> 
-  <h2>${item.name}</h2>
-  <p>${item.description}</p>
-  <p>${item.price}</p>
-  <h3>${item.autor}</h3>
+    <figure><img src="${item.images}" class="img" alt="${item.description}"></figure>
+    <div"><h2>${item.name}</h2>
+    <p>${item.description}</p>
+    <p>${item.price}</p>
+    <h3>${item.autor}</h3></div>
     </div>`;
-        detail.style.display = "flex";
-};
-detail.onclick = () => {
+    detail.style.display = "flex";
+  };
+  detail.onclick = () => {
     detail.style.display = "none";
-}
+  };*/
 }
