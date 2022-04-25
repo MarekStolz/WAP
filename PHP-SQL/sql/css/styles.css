@@ -1,0 +1,57 @@
+@font-face {
+  font-family: LED;
+  src: url(/EHSMB.TTF);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #232323;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: flex;
+      -ms-flex-pack: flex;
+          justify-content: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+  padding-bottom: 5px;
+  font-family: LED;
+}
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 95%;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  header {
+    font-size: large;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
