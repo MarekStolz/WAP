@@ -8,7 +8,7 @@ mysqli_query($con, "SET CHARACTER SET UTF8");
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 
 <head>
     <title>PHP-SQL</title>
@@ -16,10 +16,7 @@ mysqli_query($con, "SET CHARACTER SET UTF8");
     <meta name="author" content="Marek Štolz">
     <meta name="description" content="Databáze s letu" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link id="link-style" rel="stylesheet" href="./css/styles.css" />
+    <link id="link-style" rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -28,9 +25,9 @@ mysqli_query($con, "SET CHARACTER SET UTF8");
     $q = "SELECT * FROM flight";
     $result = mysqli_query($con, $q);
     echo '<table>' . PHP_EOL;
-    echo '<th>CODE</th><th>FROM-DATE</th><th>From-CODE</th><th>TO-Date</th><th>TO-CODE</th><th>GATE</th>' . PHP_EOL;
+    echo '<th>LET</th><th>ODLET</th><th>PRILET</th><th>DESTINACE</th><th>BRANA</th>' . PHP_EOL;
     while (($airport = mysqli_fetch_array($result, MYSQLI_ASSOC)) !== null) {
-        echo '<tr><td>' . $airport['code'] . '</td>' . '</td>' . '<td>' . $airport['from_dttm'] . '</td>' . '<td>' . $airport['from_airport_code'] . '</td>' . '<td>' . $airport['to_dttm'] . '</td>' . '<td>' . $airport['to_airport_code'] . '</td>' . '<td>' . $airport['gate_code'] . '</td>' . '</tr>' . PHP_EOL;
+        echo '<tr><td>' . $airport['code'] . '</td>' . '</td>' . '<td>' . $airport['from_dttm'] . '</td>' . '<td>' . $airport['to_dttm'] . '</td>' . '<td>' . $airport['to_airport_code'] . '</td>' . '<td>' . $airport['gate_code'] . '</td>' . '</tr>' . PHP_EOL;
     }
     echo '</table>' . PHP_EOL;
     /*
