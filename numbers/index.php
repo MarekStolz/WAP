@@ -1,0 +1,3 @@
+<?php 
+$nmbs = new NumbersSimple();
+?>
